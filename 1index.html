@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise #7 - Styling</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+       
+        .green {
+            color: green;
+        }
+
+        .red {
+            color: red;
+        }
+
+        .ul1 *{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Have Fun while Styling!</h1>
+
+    <p>Here is a text with a <a href="#">link</a>. Let's do it!</p>
+
+    <p>We have more <a href="#">links</a> here:</p>
+    <p>Is this a <a href="#" class="red">link</a>?</p>
+
+    <p>We have a list</p>
+    <ul>
+        <li>Please, <a href="#" class="red">Click Me!</a></li>
+        <li>Can you? let's count
+            <ul class="ul1">
+                <li>111</li>
+                <li>222 <a href="#" style="color: red;">Another Link</a></li>
+                <li>333</li>
+                <ul style="list-style-type: none;">
+                    <li><b>red</b></li>
+                    <li>green</li>
+                    <li>blue<a href="#"  style="color: red;">color Link</a></li> 
+                </ul>
+                
+            </ul>
+        </li>
+        <li>That's Enough!</li>
+    </ul>
+</body>
+</html>
