@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr; 
+            grid-template-rows: 1fr 1fr 1fr; 
+            grid-template-areas:
+                "yellow green"
+                "yellow green"
+                "blue blue";
+            height: 575px;
+        }
+
+        .yellow {
+            background-color: yellow;
+            grid-area: yellow;
+        }
+
+        .green {
+            background-color: green;
+            grid-area: green;
+        }
+
+        .blue {
+            background-color: blue;
+            grid-area: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="yellow"></div>
+        <div class="green"></div>
+        <div class="blue"></div>
+    </div>
+</body>
+</html>
